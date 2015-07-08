@@ -1,6 +1,6 @@
 {
-  "name": "reveal.js",
-  "version": "3.1.0",
+  "name": "reveal.js-extended",
+  "version": "3.1.1",
   "main": [
     "js/reveal.js",
     "css/reveal.css"
@@ -9,14 +9,15 @@
   "license": "MIT",
   "description": "The HTML Presentation Framework",
   "authors": [
-    "Hakim El Hattab <hakim.elhattab@gmail.com>"
+    "Hakim El Hattab <hakim.elhattab@gmail.com>",
+    "Albert Dang <albert.dang@frogdesign.com>"
   ],
   "dependencies": {
     "headjs": "~0.9.6"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "url": "git://github.com/frogalbertdang/reveal.js.git"
   },
   "ignore": [
     "**/.*",
