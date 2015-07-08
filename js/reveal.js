@@ -2612,7 +2612,10 @@
 			// Start video playback
 			var currentVideo = currentBackground.querySelector( 'video' );
 			if( currentVideo ) {
-				currentVideo.currentTime = 0;
+				// prevent locally served video from choking on Firefox and IE
+				if (0 != currentVideo.currentTime) {
+					currentVideo.currentTime = 0;
+				}
 				currentVideo.play();
 			}
 
