@@ -1,6 +1,6 @@
 {
   "name": "reveal.js-extended",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "main": [
     "js/reveal.js",
     "css/reveal.css"
