@@ -2763,14 +2763,15 @@
 				var backgroundImage = slide.getAttribute( 'data-background-image' ),
 					backgroundVideo = slide.getAttribute( 'data-background-video' ),
 					backgroundVideoLoop = slide.hasAttribute( 'data-background-video-loop' ),
-					backgroundIframe = slide.getAttribute( 'data-background-iframe' );
+					backgroundIframe = slide.getAttribute( 'data-background-iframe' ),
+					isBackgroundMobileVideo = slide.getAttribute( 'data-is-background-mobile-video' );
 
 				// Images
 				if( backgroundImage ) {
 					background.style.backgroundImage = 'url('+ backgroundImage +')';
 				}
 				// Videos
-				else if ( backgroundVideo && !isSpeakerNotes() ) {
+				else if ((!isMobileDevice && backgroundVideo && !isSpeakerNotes() ) || (isMobileDevice && backgroundVideo && !isSpeakerNotes()) && isBackgroundMobileVideo) {
 					var video = document.createElement( 'video' );
 
 					if( backgroundVideoLoop ) {
