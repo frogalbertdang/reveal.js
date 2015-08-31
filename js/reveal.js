@@ -4446,6 +4446,11 @@
 			return config;
 		},
 
+		// Returns the current feature object
+		getFeatures: function() {
+			return features;
+		},
+
 		// Helper method, retrieves query string as a key/value hash
 		getQueryHash: function() {
 			var query = {};
